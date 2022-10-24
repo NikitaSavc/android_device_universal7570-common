@@ -1,0 +1,141 @@
+# Audio
+vendor/lib/hw/audio.primary.exynos7570.so
+vendor/lib/libaudio-ril.so
+vendor/lib/libaudioroute.so
+vendor/lib/libLifevibes_lvverx.so
+vendor/lib/libLifevibes_lvvetx.so
+vendor/lib/libpreprocessing_nxp.so
+vendor/lib/librecordalive.so
+vendor/lib/libsamsungDiamondVoice.so
+vendor/lib/libSamsungPostProcessConvertor.so
+vendor/lib/lib_SamsungRec_06005.so
+vendor/lib/libsecaudioinfo.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/libtinyalsa.so
+vendor/lib/libvndsecril-client.so
+
+# Bluetooth (aptX)
+system/lib/libaptX_encoder.so
+
+# Camera
+vendor/lib/hw/camera.exynos7570.so
+system/lib/libcamera_client.so
+system/lib/libgui.so
+
+# DRM
+vendor/lib/liboemcrypto.so
+vendor/lib/mediadrm/libwvdrmengine.so
+
+# DRM - Widevine
+vendor/lib/libwvhidl.so
+
+# GPS
+vendor/bin/hw/gpsd
+vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/gps.cfg
+vendor/etc/init/init.gps.rc
+vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
+vendor/lib/libwrappergps.so
+vendor/lib/vendor.samsung.hardware.gnss@2.0.so
+
+# Graphics
+vendor/lib/egl/libGLES_mali.so
+
+# HWC
+vendor/bin/hw/android.hardware.graphics.composer@2.1-service
+vendor/lib/hw/gralloc.default.so
+vendor/lib/hw/gralloc.exynos7570.so
+vendor/lib/hw/hwcomposer.exynos7570.so
+vendor/lib/libexynosdisplay.so
+vendor/lib/libexynosgscaler.so
+vendor/lib/libExynosHWCService.so
+vendor/lib/libexynosscaler.so
+vendor/lib/libexynosutils.so
+vendor/lib/libexynosv4l2.so
+vendor/lib/libGrallocWrapper.so
+vendor/lib/libhdmi.so
+vendor/lib/libhwc2on1adapter.so
+vendor/lib/libhwc2onfbadapter.so
+vendor/lib/libhwcutils.so
+vendor/lib/libion_exynos.so
+vendor/lib/libmpp.so
+vendor/lib/libstainkiller.so
+vendor/lib/libvirtualdisplay.so
+
+# Memtrack
+vendor/bin/hw/android.hardware.memtrack@1.0-service
+vendor/lib/hw/memtrack.exynos7570.so
+
+# Media
+vendor/firmware/mfc_fw.bin
+
+# Misc
+vendor/lib/libcsc.so
+vendor/lib/libsecnativefeature.so
+vendor/lib/libuniplugin.so
+
+# OMX
+vendor/lib/libExynosOMX_Core.so
+vendor/lib/libExynosOMX_Resourcemanager.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so
+vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so
+vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so
+vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so
+vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so
+vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so
+vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so
+vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so
+vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so
+
+# RIL
+vendor/bin/cbd
+vendor/bin/hw/rild
+vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_attaio.bin
+vendor/etc/plmn_delta_hktw.bin
+vendor/etc/plmn_delta_usacdma.bin
+vendor/etc/plmn_delta_usagsm.bin
+vendor/etc/plmn_se13.bin
+vendor/lib/libfloatingfeature.so
+vendor/lib/libreference-ril.so
+vendor/lib/libril.so
+vendor/lib/librilutils.so
+vendor/lib/libsec-ril.so
+vendor/lib/libsec-ril-dsds.so
+vendor/lib/libvndsecril-client.so
+vendor/lib/libvkmanager_vendor.so
+vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
+vendor/lib/vendor.samsung.hardware.radio.channel@2.0_vendor.so
+vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so
+
+# Sensors
+vendor/bin/hw/android.hardware.sensors@1.0-service
+vendor/lib/libsensorlistener.so
+vendor/lib/libsensorndkbridge.so
+
+# TEEGRIS
+vendor/bin/tzdaemon
+vendor/lib/libuuid.so
+vendor/lib/libteecl.so
+
+# TEEGRIS firmware
+vendor/tee/00000000-0000-0000-0000-00000000dead
+vendor/tee/00000000-0000-0000-0000-000000534b4d
+vendor/tee/00000000-0000-0000-0000-0050524f4341
+vendor/tee/00000000-0000-0000-0000-00535453540a
+vendor/tee/00000000-0000-0000-0000-00535453540c
+vendor/tee/00000000-0000-0000-0000-0053545354ab
+vendor/tee/00000000-0000-0000-0000-00575644524d
+vendor/tee/00000000-0000-0000-0000-474154454b45
+vendor/tee/00000000-0000-0000-0000-4b45594d5354
+vendor/tee/00000000-0000-0000-0000-505256544545
+vendor/tee/00000000-0000-0000-0000-534543445256
+vendor/tee/00000000-0000-0000-0000-535355504341
+vendor/tee/00000000-0000-0000-0000-564c544b5052
+vendor/tee/driver/00000000-0000-0000-0000-000046495645
+vendor/tee/driver/00000000-0000-0000-0000-00535453540b
+vendor/tee/ffffffff-0000-0000-0000-000000000030
+vendor/tee/startup.tzar
