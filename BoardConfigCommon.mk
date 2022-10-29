@@ -59,8 +59,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 KERNEL_TOOLCHAIN := /home/nikita/LineageOS/prebuilts/gcc/$(HOST_OS)-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin
 TARGET_LINUX_KERNEL_VERSION := 3.18
-TARGET_KERNEL_LLVM_BINUTILS := false
-TARGET_KERNEL_CLANG_COMPILE := false
+# TARGET_KERNEL_LLVM_BINUTILS := false
+# TARGET_KERNEL_CLANG_COMPILE := false
 
 # Kernel config
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7570
