@@ -48,10 +48,9 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.soundtrigger@2.2-impl \
-    audio.a2dp.default \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
     audio.usb.default \
     audio.r_submix.default \
     libtinycompress 
@@ -68,9 +67,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0-helper \
-    android.hardware.camera.provider@2.5-impl \
-    android.hardware.camera.provider@2.5-service \
+    android.hardware.camera.common@2.0-util \
+    android.hardware.camera.provider@3.0-impl \
+    android.hardware.camera.provider@3.0-service \
     libion_exynos \
     Snap
 
@@ -87,15 +86,13 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service  \
     android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.composer@2.2-service  \
+    android.hardware.graphics.composer@2.1-service  \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    android.hardware.renderscript@1.0-impl \
     gralloc.default \
     libhwc2on1adapter \
     libhwc2onfbadapter \
-    libtinyxml
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -113,37 +110,27 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
 
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service \
-    chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor
+    libwvhidl \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-impl \
-    android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.samsung
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-exynos
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
+    vendor.hardware.light@3.0-service \
+    vendor.hardware.light@3.0-impl
     
 # Media
 PRODUCT_COPY_FILES += \
@@ -155,30 +142,21 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
-    libandroid_net \
-    netutils-wrapper-1.0
-
-# Offmode charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    lineage_charger_res_image
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.exynos
+    android.hardware.power@1.0-service \
+    android.hardware.power@1.0-impl
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.2 \
-    libxml2
+    vendor.samsung.hardware.radio@2.0_vendor \
+    vendor.samsung.hardware.radio.bridge@2.0 \
+    vendor.samsung.hardware.radio.bridge@2.0_vendor \
+    vendor.samsung.hardware.radio.channel@2.0_vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -211,12 +189,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl.samsung \
+    android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
-
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.samsung
     
 # Touchscreen
 PRODUCT_COPY_FILES += \
@@ -224,27 +198,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/qwerty.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/qwerty.idc \
     $(LOCAL_PATH)/configs/idc/qwerty2.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/qwerty2.idc
 
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Shims
 PRODUCT_PACKAGES += \
     libexynoscamera_shim \
     libstagefright_shim
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
-
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@2.0-impl \
+    android.hardware.vibrator@2.0-service
 
 # VNDK
 PRODUCT_PACKAGES += \
@@ -253,10 +215,6 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     macloader
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
