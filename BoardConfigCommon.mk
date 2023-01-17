@@ -57,8 +57,8 @@ TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-KERNEL_TOOLCHAIN := /home/nikita/LineageOS/prebuilts/gcc/$(HOST_OS)-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+KERNEL_TOOLCHAIN := /home/nikita/LineageOS/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
 TARGET_LINUX_KERNEL_VERSION := 3.18
 # TARGET_KERNEL_LLVM_BINUTILS := false
 # TARGET_KERNEL_CLANG_COMPILE := false
@@ -180,8 +180,8 @@ BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
-BOARD_VNDK_VERSION := current
-
+BOARD_VNDK_VERSION :=
+PRODUCT_TREBLE_LINKER_NAMESPACES := true
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/bin/mediaserver|/system/lib/libstagefright_shim.so
