@@ -33,8 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     debug.hwc.skip_dma_types=0,2 \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
     ro.hardware.egl=mali
+
 # Location 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.location.osnlp.package=com.google.android.gms \
