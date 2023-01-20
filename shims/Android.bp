@@ -1,0 +1,14 @@
+cc_library_shared {
+    name: "libgui_shim",
+    shared_libs: [
+        "libbinder",
+        "libgui",
+        "libui",
+        "libutils",
+    ],
+    srcs: [
+        "libshim_gui.cpp",
+    ],
+}
+
+

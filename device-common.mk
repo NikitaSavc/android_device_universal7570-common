@@ -201,7 +201,8 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libexynoscamera_shim \
-    libstagefright_shim
+    libstagefright_shim \
+    libgui_shim
 
 # Vibrator
 PRODUCT_PACKAGES += \
