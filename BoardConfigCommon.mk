@@ -184,7 +184,8 @@ BOARD_VNDK_VERSION := current
 PRODUCT_TREBLE_LINKER_NAMESPACES := true
 # Shim
 TARGET_LD_SHIM_LIBS += \
-    /system/bin/mediaserver|/system/lib/libstagefright_shim.so
+	/vendor/lib/libstagefright_omx_utils.so|libshim_stagefright_foundation.so \
+	/system/bin/mediaserver|/system/lib/libstagefright_shim.so
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
