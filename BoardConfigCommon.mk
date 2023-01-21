@@ -180,17 +180,11 @@ BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
-BOARD_VNDK_VERSION :=
+BOARD_VNDK_VERSION := current
 PRODUCT_TREBLE_LINKER_NAMESPACES := true
 # Shim
 TARGET_LD_SHIM_LIBS += \
-    /system/bin/mediaserver|/system/lib/libstagefright_shim.so \
-    /system/bin/surfaceflinger|/system/lib/libgui_shim.so \
-    /system/bin/bootanimation|/system/lib/libgui_shim.so \
-    /system/bin/mediaserver|/system/lib/libgui_shim.so \
-    /system/bin/mediaextractor|/system/lib/libgui_shim.so \
-    /system/bin/app_process32|/system/lib/libgui_shim.so
-
+    /system/bin/mediaserver|/system/lib/libstagefright_shim.so
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true

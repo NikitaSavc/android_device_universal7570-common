@@ -21,7 +21,7 @@ system/lib/libaptX_encoder.so
 # Camera
 vendor/lib/hw/camera.exynos7570.so
 system/lib/libcamera_client.so
-system/lib/libgui.so
+
 
 # DRM
 vendor/lib/liboemcrypto.so

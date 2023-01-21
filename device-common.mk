@@ -187,6 +187,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
 
+# GPS 
+PRODUCT_PACKAGES += \
+	libandroid_net
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
@@ -201,8 +204,7 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libexynoscamera_shim \
-    libstagefright_shim \
-    libgui_shim
+    libstagefright_shim
 
 # Vibrator
 PRODUCT_PACKAGES += \
