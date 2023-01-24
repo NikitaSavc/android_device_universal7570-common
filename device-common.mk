@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,12 +48,15 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
-    libtinycompress 
+    libtinycompress \
+    libfmq \
+    libfmq.vendor 
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -64,6 +67,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
+
+# Bluetooth 
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl.7570 \
+    libbt-vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -93,12 +101,17 @@ PRODUCT_PACKAGES += \
     gralloc.default \
     libhwc2on1adapter \
     libhwc2onfbadapter \
+    libtinyxml
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-impl \
+    android.hardware.configstore@1.0-service
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.3-service.clearkey
 
 # Flat device tree for boot image
 PRODUCT_HOST_PACKAGES += \
@@ -189,11 +202,12 @@ PRODUCT_COPY_FILES += \
 
 # GPS 
 PRODUCT_PACKAGES += \
-	libandroid_net
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+	libandroid_net \
+	android.hardware.gnss@1.0-impl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml
     
 # Touchscreen
 PRODUCT_COPY_FILES += \
@@ -205,7 +219,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	libexynoscamera_shim \
 	libstagefright_shim \
-	libshim_stagefright_foundation \
+	libstagefright_vendor_shim 
     
 
 # Vibrator

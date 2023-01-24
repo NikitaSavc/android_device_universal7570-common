@@ -164,27 +164,6 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.Exynos.vc1.dec" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
-            <Type name="video/wvc1" >
-                <Limit name="size" min="32x32" max="1920x1088" />
-                <Limit name="alignment" value="2x2" />
-                <Limit name="block-size" value="16x16" />
-                <Limit name="blocks-per-second" min="1" max="244800" />
-                <Limit name="bitrate" range="1-20000000" />
-                <Limit name="concurrent-instances" max="16"/>
-                <Limit name="performance-point-1920x1080" range="30" />
-                <Feature name="adaptive-playback" />
-            </Type>
-            <Type name="video/x-ms-wmv" >
-                <Limit name="size" min="32x32" max="1920x1088" />
-                <Limit name="alignment" value="2x2" />
-                <Limit name="block-size" value="16x16" />
-                <Limit name="blocks-per-second" min="1" max="244800" />
-                <Limit name="bitrate" range="1-20000000" />
-                <Limit name="concurrent-instances" max="16"/>
-                <Limit name="performance-point-1920x1080" range="30" />
-                <Feature name="adaptive-playback" />
-            </Type>
-        </MediaCodec>
 		<!-- OVERRIDE GOOGLE C2 AVC DECODER TO LOWER MAX BLOCKS-PER-SECOND -->
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" variant="slow-cpu,!slow-cpu" update="true" enabled="true">
             <Alias name="OMX.google.h264.decoder" />

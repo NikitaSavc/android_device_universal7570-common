@@ -1,0 +1,7 @@
+cc_library_shared {
+    name: "libstagefright_vendor_shim",
+    vendor: true,    
+    srcs: [
+	"MediaDefs.cpp",
+    ],
+}

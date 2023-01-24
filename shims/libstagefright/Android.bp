@@ -1,8 +1,9 @@
 cc_library_shared {
     name: "libstagefright_shim",
-    
+   // vendor_available: true,    
     srcs: [
         "CameraSource.cpp",
+	"MediaDefs.cpp",
     ],
 
     export_shared_lib_headers: [

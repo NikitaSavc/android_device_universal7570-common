@@ -184,7 +184,7 @@ BOARD_VNDK_VERSION := current
 PRODUCT_TREBLE_LINKER_NAMESPACES := true
 # Shim
 TARGET_LD_SHIM_LIBS += \
-	/vendor/lib/libstagefright_omx_utils.so|libshim_stagefright_foundation.so \
+	/vendor/bin/hw/android.hardware.media.omx@1.0-service|/vendor/lib/libstagefright_vendor_shim.so \
 	/system/bin/mediaserver|/system/lib/libstagefright_shim.so
 
 # Wifi
