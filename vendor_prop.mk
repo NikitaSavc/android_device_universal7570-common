@@ -2,6 +2,14 @@
 # PRODUCT_PROPERTY_OVERRIDES += \
 #    ro.config.low_ram=true
 
+# Platform
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.board=exynos7570
+    ro.board.platform=universal7570
+
+# API Level Android
+ro.product.first_api_level=29
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
