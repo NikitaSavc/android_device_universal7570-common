@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/samsung/universal7570-common
 
+# Crutches
+PRODUCT_COPY_FILES += prebuilts/vndk/v28/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.graphics.allocator@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.allocator@2.0.so \
+
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
@@ -92,7 +95,6 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@2.0-impl.vendor \
     android.hardware.graphics.allocator@2.0-service  \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service  \
@@ -194,11 +196,8 @@ PRODUCT_PACKAGES += \
 
 # Seccomp_policy
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp/crash_dump.arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/crash_dump.arm.policy \
-    $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
-    $(LOCAL_PATH)/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
 
 # GPS 

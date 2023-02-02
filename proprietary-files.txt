@@ -16,12 +16,7 @@ vendor/lib/libtinyalsa.so
 vendor/lib/libvndsecril-client.so
 
 # Bluetooth (aptX)
-system/lib/libaptX_encoder.so
-
-# Camera
-vendor/lib/hw/camera.exynos7570.so
-system/lib/libcamera_client.so
-
+# system/lib/libaptX_encoder.so
 
 # DRM
 vendor/lib/liboemcrypto.so
@@ -44,7 +39,6 @@ vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 vendor/lib/egl/libGLES_mali.so
 
 # HWC
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.exynos7570.so
 vendor/lib/hw/hwcomposer.exynos7570.so
@@ -65,7 +59,6 @@ vendor/lib/libstainkiller.so
 vendor/lib/libvirtualdisplay.so
 
 # Memtrack
-vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/lib/hw/memtrack.exynos7570.so
 
 # Media

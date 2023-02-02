@@ -16,7 +16,7 @@
 
 set -e
 
-export DEVICE=j4lte
+export DEVICE=universal7570-common
 export VENDOR=samsung
 export DEVICE_COMMON=universal7570-common
 
@@ -55,3 +55,5 @@ setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
 "$MY_DIR"/setup-makefiles.sh
+
+DEVICE_BLOB_ROOT="${LINEAGE_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary

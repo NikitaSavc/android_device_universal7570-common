@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2017, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +14,7 @@
  * limitations under the License.
  */
 
-/* status_t android::Fence::wait(int timeout); */
-extern "C" int _ZN7android5Fence4waitEi(int timeout);
+#include <dlfcn.h>
+#include <hardware/camera2.h>
 
-/* status_t android::Fence::wait(unsigned int timeout); */
-extern "C" int _ZN7android5Fence4waitEj(unsigned int timeout)
-{
-    return _ZN7android5Fence4waitEi(static_cast<int>(timeout));
-}
-
-extern "C" void _ZN7android5FenceD1Ev() { }
+int camera2_device_open(const hw_module_t* module, const char* name, hw_device_t** device);

@@ -240,7 +240,6 @@
             <name>ISensors</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
@@ -310,7 +309,6 @@
             <name>ISehCameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
-        <fqname>@3.0::ISehCameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
@@ -320,7 +318,6 @@
             <name>ISehGnss</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ISehGnss/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.health</name>
@@ -330,7 +327,6 @@
             <name>ISehHealth</name>
             <instance>sehhealth</instance>
         </interface>
-        <fqname>@1.0::ISehHealth/sehhealth</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.light</name>
@@ -340,7 +336,6 @@
             <name>ISehLight</name>
             <instance>default</instance>
         </interface>
-        <fqname>@3.0::ISehLight/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.miscpower</name>
@@ -350,7 +345,6 @@
             <name>ISehMiscPower</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ISehMiscPower/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio</name>
