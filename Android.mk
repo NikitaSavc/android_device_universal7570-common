@@ -15,7 +15,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-
+# Exynos 7570 devices
 ifneq ($(filter j4lte, j4ltejx, j4ltexx, on5xelte,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
