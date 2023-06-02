@@ -78,7 +78,9 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.exynos7570 \
     android.hardware.camera.common@2.0-util \
+    android.hardware.camera.common@1.0 \
     android.hardware.camera.provider@3.0-impl \
     android.hardware.camera.provider@3.0-service \
     libion_exynos \
@@ -140,8 +142,8 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@4.0-impl \
+    android.hardware.keymaster@4.0-service
 
 # Lights
 PRODUCT_PACKAGES += \
